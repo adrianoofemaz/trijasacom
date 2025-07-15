@@ -22,7 +22,7 @@
                 <a href="">Portofolio</a>
               </li>
               <li class="font-semibold hover:text-cp-dark-blue transition-all duration-300">
-                <a href="">Sertifikasi & Legalitas</a>
+                <a href="">Blog</a>
               </li>
               <a href="{{ route('front.contact') }}" class="bg-stone-900 p-[14px_20px] w-fit rounded-xl hover:shadow-[0_12px_30px_0_#312ECB66] transition-all duration-300 font-bold text-white">Kontak</a>
             </ul>

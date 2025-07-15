@@ -325,89 +325,9 @@
     </div>
   </div>
  
-  <div id="FAQ" class="bg-[#F6F7FA] w-full py-20 px-[10px] mt-20 -mb-20">
-    <div class="container max-w-[1000px] mx-auto">
-      <div class="flex flex-col lg:flex-row gap-[50px] sm:gap-[70px] items-center">
-          <div class="flex flex-col gap-[30px]">
-              <div class="flex flex-col gap-[10px]">
-                  <h2 class="font-bold text-4xl leading-[45px]">Frequently Asked Questions</h2>
-              </div>
-              <a href="contact.html" class="p-5 bg-cp-black rounded-xl text-white w-fit font-bold">Contact Us</a>
-          </div>
-          <div class="flex flex-col gap-[30px] sm:w-[603px] shrink-0">
-              <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
-                  <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-1">
-                      <span class="font-bold text-lg leading-[27px] text-left">Can installments be beneficial for both?</span>
-                      <div class="arrow w-9 h-9 flex shrink-0">
-                          <img src="{{asset('images/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
-                      </div>
-                  </button>
-                  <div id="accordion-faq-1" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients assets to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
-                  </div>
-              </div>
-              <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
-                  <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-2">
-                      <span class="font-bold text-lg leading-[27px] text-left">What kind of framework you popular with?</span>
-                      <div class="arrow w-9 h-9 flex shrink-0">
-                          <img src="{{asset('images/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
-                      </div>
-                  </button>
-                  <div id="accordion-faq-2" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients assets to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
-                  </div>
-              </div>
-              <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
-                  <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-3">
-                      <span class="font-bold text-lg leading-[27px] text-left">What insurance provider do you use?</span>
-                      <div class="arrow w-9 h-9 flex shrink-0">
-                          <img src="{{asset('images/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
-                      </div>
-                  </button>
-                  <div id="accordion-faq-3" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients assets to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
-                  </div>
-              </div>
-              <div class="flex flex-col p-5 rounded-2xl bg-white w-full">
-                  <button class="accordion-button flex justify-between gap-1 items-center" data-accordion="accordion-faq-4">
-                      <span class="font-bold text-lg leading-[27px] text-left">What if we have other questions?</span>
-                      <div class="arrow w-9 h-9 flex shrink-0">
-                          <img src="{{asset('images/icons/arrow-circle-down.svg')}}" class="transition-all duration-300" alt="icon">
-                      </div>
-                  </button>
-                  <div id="accordion-faq-4" class="accordion-content hide">
-                      <p class="leading-[30px] text-cp-light-grey pt-[14px]">We want to protect our and clients assets to the max level so that we chose the best one from Jakarta, Indonesia will also protect post building finished completed ahead one.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </div>
+  <x-faq/>
   <x-footer/>
-  <div id="video-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-      <div class="relative p-4 w-full lg:w-1/2 max-h-full">
-          <!-- Modal content -->
-          <div class="relative bg-white rounded-[20px] overflow-hidden shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                  <h3 class="text-xl font-semibold text-cp-black">
-                      Company Profile Video
-                  </h3>
-                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" onclick="{modal.hide()}">
-                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                      </svg>
-                      <span class="sr-only">Close modal</span>
-                  </button>
-              </div>
-              <!-- Modal body -->
-              <div class="">
-                <!-- video src added from the js script (modal-video.js) to prevent video running in the backgroud -->
-                <iframe id="videoFrame" class="aspect-[16/9]" width="100%" src="" title="Demo Project Laravel Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              </div>
-          </div>
-      </div>
-  </div>
+  
 
 @endsection
 

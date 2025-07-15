@@ -8,11 +8,7 @@
   <div id="Contact" class="container max-w-[1130px] mx-auto flex flex-wrap xl:flex-nowrap justify-between gap-[50px] relative z-10">
     <div class="flex flex-col mt-20 gap-[50px]">
       <div class="breadcrumb flex items-center gap-[30px]">
-        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Home</p>
-        <span class="text-cp-light-grey">/</span>
-        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Product</p>
-        <span class="text-cp-light-grey">/</span>
-        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Appointment</p>
+        <p class="text-cp-light-grey last-of-type:text-cp-black last-of-type:font-semibold">Kontak</p>
       </div>
       <h1 class="font-extrabold text-4xl leading-[45px]">We Help You to Build Awesome Project</h1>
       <div class="flex flex-col gap-5">
@@ -128,47 +124,47 @@
     <div class="logo-container flex flex-wrap gap-5 justify-center">
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-54.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-54.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-52.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-52.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-55.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-55.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-44.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-44.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-51.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-51.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-55.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-55.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-52.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-52.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-54.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-54.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
       <div class="logo-card h-[68px] w-fit flex items-center shrink-0 border border-[#E8EAF2] rounded-[18px] p-4 gap-[10px] bg-white hover:border-cp-dark-blue transition-all duration-300">
         <div class="overflow-hidden h-9">
-          <img src="{{asset('images/logo/logo-51.svg')}}')}}" class="object-contain w-full h-full" alt="logo">
+          <img src="{{asset('images/logo/logo-51.svg')}}" class="object-contain w-full h-full" alt="logo">
         </div>
       </div>
     </div>
