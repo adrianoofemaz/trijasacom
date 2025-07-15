@@ -1,17 +1,17 @@
 <?php
 
-use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CompanyAboutController;
 use App\Http\Controllers\CompanyKeypointController;
 use App\Http\Controllers\CompanyStatisticController;
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\HeroSectionController;
-use App\Http\Controllers\OurPrincipleController;
 use App\Http\Controllers\OurTeamController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectClientController;
 use App\Http\Controllers\TestimonialController;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class,'index'])->name('front.index') ;
@@ -41,10 +41,6 @@ Route::middleware('auth')->group(function () {
             Route::resource('products', ProductController::class);
         });
 
-          Route::middleware('can:manage principles')->group(function () {
-            Route::resource('principles', OurPrincipleController::class);
-        });
-
         Route::middleware('can:manage testimonials')->group(function () {
             Route::resource('testimonials', TestimonialController::class);
         });
@@ -61,8 +57,8 @@ Route::middleware('auth')->group(function () {
             Route::resource('abouts', CompanyAboutController::class);
         });
 
-        Route::middleware('can:manage appointments')->group(function () {
-            Route::resource('appointments', AppointmentController::class);
+        Route::middleware('can:manage contacts')->group(function () {
+            Route::resource('contacts', ContactController::class);
         });
 
         Route::middleware('can:manage hero sections')->group(function () {

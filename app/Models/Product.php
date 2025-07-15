@@ -17,6 +17,6 @@ class Product extends Model
     ];
 
     public function Appointments(){
-        return $this->hasMany(Appointment::class);
+        return $this->hasMany(Contact::class);
     }
 }

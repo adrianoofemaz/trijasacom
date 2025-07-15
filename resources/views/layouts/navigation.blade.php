@@ -34,9 +34,8 @@
                                 <x-dropdown-link :href="route('admin.hero_sections.index')">
                                     {{ __('Hero Section') }}
                                 </x-dropdown-link>
-                                <x-dropdown-link :href="route('admin.principles.index')">
-                                    {{ __('Our Principles') }}
-                                </x-dropdown-link>
+                    
+                               
                                 <x-dropdown-link :href="route('admin.statistics.index')">
                                     {{ __('Company Statistics') }}
                                 </x-dropdown-link>
@@ -81,8 +80,8 @@
                         {{ __('About') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('admin.appointments.index')" :active="request()->routeIs('admin.appointments.index')">
-                        {{ __('Appointments') }}
+                    <x-nav-link :href="route('admin.contacts.index')" :active="request()->routeIs('admin.contacts.index')">
+                        {{ __('Contact') }}
                     </x-nav-link>
 
                 </div>

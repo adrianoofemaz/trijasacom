@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Appointment;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
-class AppointmentController extends Controller
+
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +35,7 @@ class AppointmentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Appointment $appointment)
+    public function show(Contact $contact)
     {
         //
     }
@@ -42,7 +43,7 @@ class AppointmentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Appointment $appointment)
+    public function edit(Contact $contact)
     {
         //
     }
@@ -50,7 +51,7 @@ class AppointmentController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Appointment $appointment)
+    public function update(Request $request, Contact $contact)
     {
         //
     }
@@ -58,7 +59,7 @@ class AppointmentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Appointment $appointment)
+    public function destroy(Contact $contact)
     {
         //
     }
