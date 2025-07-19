@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CompanyAbout;
+use App\Models\CompanyService;
 use App\Models\Project;
 
 use Illuminate\Http\Request;
@@ -11,6 +12,7 @@ use App\Models\HeroSection;
 use App\Models\OurPrinciple;
 use App\Models\OurTeam;
 use App\Models\Product;
+use App\Models\ProjectClient;
 use App\Models\Testimonial;
 
 class FrontController extends Controller
@@ -39,5 +41,26 @@ class FrontController extends Controller
     public function contact(){
         $testimonials = Testimonial::take(4)->get();
         return view("front.contact", compact('testimonials'));
+    }
+
+    public function service(){
+        $services = CompanyService::all();
+        $statistics = CompanyStatistic::take(4)->get();
+        $projectClients = ProjectClient::take(6)->get();
+        return view("front.service", compact('services', 'statistics', 'projectClients'));
+    }
+
+    public function portofolio(){
+        $projects = Project::with('projectClient')
+                        ->orderBy('created_at', 'desc')
+                        ->paginate(12);
+        
+        $projectClients = ProjectClient::withCount('projects')
+                                    ->having('projects_count', '>', 0)
+                                    ->get();
+        
+        $statistics = CompanyStatistic::take(4)->get();
+        
+        return view("front.portofolio", compact('projects', 'projectClients', 'statistics'));
     }
 }

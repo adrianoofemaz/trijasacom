@@ -14,11 +14,22 @@ return new class extends Migration
         Schema::create('project_clients', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('occupation');
-            $table->string('avatar');
-            $table->string('logo');
-            $table->softDeletes();
+            $table->string('slug')->unique();
+            $table->text('description')->nullable();
+            $table->string('logo')->nullable();
+            $table->string('website')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
+            $table->string('industry')->nullable();
+            $table->string('company_size')->nullable(); // startup, small, medium, large, enterprise
+            $table->json('contact_person')->nullable(); // {name, email, phone, position}
+            $table->boolean('is_active')->default(true);
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
+            
+            $table->index(['is_active', 'sort_order']);
+            $table->index('industry');
         });
     }
 
