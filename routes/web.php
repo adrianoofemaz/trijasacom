@@ -20,6 +20,9 @@ Route::get('/about', [FrontController::class,'about'])->name('front.about') ;
 Route::get('/contact', [FrontController::class,'contact'])->name('front.contact') ;
 Route::get('/service', [FrontController::class,'service'])->name('front.service') ;
 Route::get('/project', [FrontController::class,'portofolio'])->name('front.portofolio') ;
+
+Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
+Route::get('/blog/{slug}', [FrontController::class, 'blogShow'])->name('front.blog.show');
     
     
 

@@ -31,7 +31,7 @@
                 <a href="{{ route('front.portofolio') }}" class="nav-link px-4 py-2 rounded-lg text-gray-700 hover:text-cp-dark-blue hover:bg-cp-dark-blue/5 transition-all duration-300 font-medium {{ request()->routeIs('front.portofolio') ? 'text-cp-dark-blue bg-cp-dark-blue/5' : '' }}">
                     Portofolio
                 </a>
-                <a href="" class="nav-link px-4 py-2 rounded-lg text-gray-700 hover:text-cp-dark-blue hover:bg-cp-dark-blue/5 transition-all duration-300 font-medium {{ request()->routeIs('front.blog') ? 'text-cp-dark-blue bg-cp-dark-blue/5' : '' }}">
+                <a href="{{ route('front.blog') }}" class="nav-link px-4 py-2 rounded-lg text-gray-700 hover:text-cp-dark-blue hover:bg-cp-dark-blue/5 transition-all duration-300 font-medium {{ request()->routeIs('front.blog') ? 'text-cp-dark-blue bg-cp-dark-blue/5' : '' }}">
                     Blog
                 </a>
                 <a href="{{ route('front.contact') }}" class="nav-link bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-2 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ml-4">
